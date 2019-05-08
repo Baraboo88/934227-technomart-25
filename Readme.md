@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Баранов](https://up.htmlacademy.ru/htmlcss/25/user/934227).
-* Наставник: Янн Север.
+* Наставник: [Янн Север](https://htmlacademy.ru/profile/10ktroubles).
 
 ---
 
