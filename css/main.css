@@ -1,0 +1,635 @@
+
+.visually-hidden {
+  display: none
+}
+
+.body-header {
+  width: 1280px;
+  height: 320px;
+  background-color: #f4f7f9;
+  align-self: center;
+}
+
+.body-header-aid-panel {
+  width: 100%;
+  height: 42px;
+  background-color: #293449;
+  display: flex;
+}
+
+/* padding top doesnt work - to check with the mentor */
+.body-header-logo {
+  margin-left: 13.2%;
+  width: 220px;
+  height: 47px;
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+  text-align: center;
+  line-height: 47px;
+}
+
+.body-header-search {
+  margin-left: 1%;
+  width: 73px;
+  height: 17px;
+  background-color: #293449;
+  align-self: center;
+  display: flex;
+}
+
+.body-header-search img {
+  width: 17px;
+  height: 17px;
+  opacity: 0.3;
+}
+
+.body-header-search span {
+  margin-left: 10px;
+  width: 41px;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+.body-header-bookmark {
+  margin-left: 15.4%;
+  width: 100px;
+  height: 16px;
+  background-color: #293449;
+  align-self: center;
+  display: flex;
+}
+
+.body-header-bookmark img {
+  width: 14px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.body-header-bookmark span {
+  margin-left: 10px;
+  width: 78px;
+  height: 16px;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.body-header-basket {
+  margin-left: 4%;
+  width: 100px;
+  height: 16px;
+  background-color: #293449;
+  align-self: center;
+  display: flex;
+}
+
+.body-header-basket img {
+  width: 14px;
+  height: 16px;
+  opacity: 0.3;
+
+}
+
+.body-header-basket a {
+  margin-left: 10px;
+  width: 69px;
+  height: 16px;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.body-header-checkout {
+  display: inline;
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 42px;
+  margin-left: 2%;
+}
+
+.body-header-infologin {
+
+  width: 887px;
+  margin-left: 17.4%;
+  margin-top: 46px;
+  height: 60px;
+  display: flex;
+}
+
+.body-header-description {
+  width: 196px;
+  height: 60px;
+
+}
+
+.body-header-description h1 {
+  margin: 0;
+  padding-top: 8px;
+  width: 196px;
+  font-family: Cuprum;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+}
+
+.body-header-contacts {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 71px;
+  width: 270px;
+  height: 65px;
+  list-style-type: none;
+
+
+}
+
+.header-phone {
+  width: 270px;
+  height: 42px;
+  border: solid 3px #ffffff;
+}
+
+.header-phone img {
+  margin-left: 18px;
+  width: 18px;
+  height: 100%;
+  display: inline;
+  vertical-align: middle;
+}
+
+.header-phone a {
+  margin-left: 40px;
+  width: 144px;
+  height: 21px;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+  display: inline;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.header-address {
+  padding: 10px;
+  width: 250px;
+  height: 13px;
+  font-family: Cuprum;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32425c;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.head-user-navigation {
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+  width: 281px;
+  height: 68px;
+  display: flex;
+  list-style-type: none;
+}
+
+.head-login-link {
+  width: 121px;
+  height: 45px;
+  background-color: #ffffff;
+
+}
+
+.head-login-link img {
+  width: 20px;
+  height: 100%;
+  display: inline;
+  vertical-align: middle;
+  margin-left: 14px;
+}
+
+.head-login-link a {
+  width: 46px;
+  height: 16px;
+  font-family: Cuprum;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  display: inline;
+  vertical-align: middle;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.head-register-link {
+  margin-left: 10px;
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  text-align: center;
+
+}
+
+.head-register-link a {
+  font-family: Cuprum;
+  font-size: 21px;
+  color: #000000;
+  display: inline;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+}
+
+.body-header-nav {
+
+  display: inline-block;
+  width: 940px;
+  height: 60px;
+  margin-left: 13.2%;
+  margin-top: 68px;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+.body-header-nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0 6.5% 0 0;
+}
+
+.body-header-nav li {
+  padding-left: 6.5%;
+  color: #ffffff;
+}
+
+.main-about-us {
+  width: 1280px;
+  height: 536px;
+}
+
+.main-about-us-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 58px;
+}
+
+.main-about-us-list p {
+  width: 519px;
+  font-family: PTSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.main-about-us-list h3 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.main-about-us-list li {
+  padding: 0;
+  margin: 0 0 0 130px;
+  width: 519px;
+  height: 358px;
+
+}
+
+.main-about-us-cplist {
+  list-style: none;
+  margin: 15px 0 0;
+  padding: 0;
+  width: 200px;
+
+
+}
+
+.main-about-us-cplist li {
+  margin: 10px 0 0;
+  padding: 0;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.11;
+}
+
+.red-line {
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  margin-top: 8px;
+  margin-right: 10px;
+
+}
+
+.about-us-red-button {
+  margin: 32px 0 0;
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  text-align: center;
+}
+
+.about-us-red-button a {
+  color: #ffffff;
+  text-align: center;
+  font-family: Cuprum;
+  line-height: 38px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.write-us-red-button {
+  margin: 40px 0 0;
+  width: 300px;
+  height: 38px;
+  background-color: #ee3643;
+  text-align: center;
+}
+
+.write-us-red-button a {
+  color: #ffffff;
+  text-align: center;
+  font-family: Cuprum;
+  line-height: 38px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contacts-map {
+  margin-top: 5px;
+
+}
+
+footer {
+  width: 1280px;
+  height: 300px;
+  background-color: #293449;
+}
+
+.footer-bottom-links {
+  width: 1280px;
+  height: 197px;
+  background-color: #32425c
+}
+
+.first-links-block {
+  display: flex;
+}
+
+.footer-logo {
+  margin: 0px 0px 0px 130px;
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  text-align: center;
+  line-height: 68px;
+
+}
+
+
+.footer-links-block-1 {
+  margin: 40px 0px 0px 80px;
+  list-style: none;
+  display: flex;
+
+
+}
+
+.footer-links-block-1 li {
+  margin-left: 60px;
+}
+
+.footer-links-block-1 li a {
+  width: 69px;
+  height: 13px;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f1f5f7;
+  text-decoration: none;
+}
+
+.second-links-block {
+  margin: 32px 0px 0px 0px;
+  display: flex;
+}
+.second-links-block p{
+  margin: 0px 0px 0px 130px;
+  width: 322px;
+  height: 40px;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f3f7f9;
+}
+.footer-links-block-2 {
+  margin: 0px;
+  list-style: none;
+  display: flex;
+}
+
+.footer-links-block-2 li {
+  margin-left: 60px;
+}
+
+
+.footer-links-block-2 li a {
+  width: 56px;
+  height: 13px;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffda96;
+  text-decoration: none;
+}
+
+.footer-rights-block{
+  display: flex;
+}
+
+.footer-rights-block p {
+  margin: 39px 10px 0px 130px;
+  width: 228px;
+  height: 33px;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer-social{
+  width: 126px;
+  height: 42px;
+  margin-top: 35px;
+  margin-left: 130px;
+}
+
+.footer-social ul{
+  list-style: none;
+  display: flex;
+  width: 126px;
+  height: 42px;
+}
+
+.footer-social li{
+  margin: 0px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+}
+
+.footer-feedback{
+  width: 400px;
+  height: 34px;
+  margin: 40px 0 0 119px;
+
+}
+
+.footer-feedback ul {
+  width: 400px;
+  height: 34px;
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.footer-feedback li{
+  height: 34px;
+  width: 135px;
+
+  padding: 0px;
+  margin: 0 0 0 53px;
+
+}
+
+.footer-feedback p {
+  margin:0;
+  padding: 0px;
+  width: 135px;
+  height: 32px;
+
+}
+.footer-feedback b {
+  margin: 0px;
+  padding: 0px;
+  width: 135px;
+  height: 32px;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+}
+.footer-feedback a{
+  text-decoration: none;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffd180;
+}
+
+
+
+
