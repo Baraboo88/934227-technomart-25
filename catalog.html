@@ -48,71 +48,89 @@
   </section>
   <nav class="body-header-nav">
     <ul>
-      <li>Главная</li>
-      <li>Компания</li>
-      <li>Каталог</li>
-      <li>Новости</li>
-      <li>Спецпредложения</li>
-      <li>Доставка</li>
-      <li>Контакты</li>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Компания</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li><a href="#">Новости<a></li>
+      <li><a href="#">Спецпредложения</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
     </ul>
   </nav>
 </header>
 <main>
   <div class="main-catalog-navigation-block">
-      <ul class="main-catalog-navigation-links">
-        <li><a href="index.html"><img src="img/icon-home.svg" alt="На главную"></a></li>
-        <li>
-          <img src="img/icon-right-small.svg" alt="right-small">
-          <a href="#">Каталог</a>
-        </li>
-        <li>
-          <img src="img/icon-right-small.svg" alt="right-small">
-          <a href="#">Инструменты</a>
-        </li>
-        <li>
-          <img src="img/icon-right-small.svg" alt="right-small">
-          <a href="#">Перфораторы</a>
-        </li>
-      </ul>
+    <ul class="main-catalog-navigation-links">
+      <li><a href="index.html"><img src="img/icon-home.svg" alt="На главную"></a></li>
+      <li>
+        <img src="img/icon-right-small.svg" alt="right-small">
+        <a href="#">Каталог</a>
+      </li>
+      <li>
+        <img src="img/icon-right-small.svg" alt="right-small">
+        <a href="#">Инструменты</a>
+      </li>
+      <li>
+        <img src="img/icon-right-small.svg" alt="right-small">
+        <a href="#">Перфораторы</a>
+      </li>
+    </ul>
   </div>
   <div class="main-header-block">
     <h2>Перфораторы</h2>
   </div>
 
   <section class="items-filter">
-    <ul class="producers-list">
-      <li>
-        <img src="img/checkbox-on.svg">
-        <span>BOSH</span>
-      </li>
-      <li>
-        <img src="img/checkbox-off.svg">
-        <span>ИНТЕРСКОЛ</span>
-      </li>
-      <li>
-        <img src="img/checkbox-on.svg">
-        <span>MAKITA</span>
-      </li>
-      <li>
-        <img src="img/checkbox-off.svg">
-        <span>DEWALT</span>
+    <form id="items-filter-form">
+      <ul class="producers-list">
+        <li>
+          <label>
+            <input type="checkbox" value="BOSH">
+            <span>BOSH</span>
+          </label>
         </li>
-      <li>
-        <img src="img/checkbox-off.svg">
-        <span>HITACHI</span>
+        <li>
+          <label>
+            <input type="checkbox" value="ИНТЕРСКОЛ">
+            <span>ИНТЕРСКОЛ</span>
+          </label>
         </li>
-    </ul>
-    <ul class="change-list">
-      <li>
-        <img src="img/radio-on.svg">
-        АККУМУЛЯТОРНОЕ
-      </li>
-      <li>
-        <img src="img/radio-off.svg">
-        СЕТЕВОЕ</li>
-    </ul>
-    <a class="search-button" href="#">ПОКАЗАТЬ</a>
+        <li>
+          <label>
+            <input type="checkbox" value="MAKITA">
+            <span>MAKITA</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" value="DEWALT">
+            <span>DEWALT</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" value="HITACHI">
+            <span>HITACHI</span>
+          </label>
+        </li>
+      </ul>
+      <ul class="items-filter-form-charge-list">
+        <li>
+          <label>
+            <input type="radio" id="radio-akum" name="items-radio" value="АККУМУЛЯТОРНОЕ">
+            <span>АККУМУЛЯТОРНОЕ</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" id="radio-dial" name="items-radio" value="СЕТЕВОЕ">
+            <span>СЕТЕВОЕ</span>
+          </label>
+        </li>
+      </ul>
+      <button type="submit">ПОКАЗАТЬ</button>
+    </form>
+
   </section>
   <section class="items">
     <ul class="items-list">
@@ -241,5 +259,19 @@
     </div>
   </section>
 </footer>
+
+<div class="confirmation-message-block">
+  <button class="form-close-button">X</button>
+  <p>
+    <img src="" alt="Confirmation Image">
+    <span>Товар добавлен в корзину</span>
+  </p>
+  <div class="confirmation-message-block-bottom-buttons">
+
+    <a class="confirmation-message-block-checkout-button" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+    <button onclick="">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+  </div>
+</div>
+
 </body>
 </html>
