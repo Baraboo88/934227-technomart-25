@@ -14,44 +14,46 @@
 
 <header class="body-header">
   <section class="body-header-aid-panel">
-    <div class="aid-panel-wrapper">
+    <div class="container aid-panel-wrapper">
 
       <a class="logo header-logo" href="index.html"><img width="109" height="19" src="img/logo-technomart.svg" alt="logo"></a>
-      <div class="body-header-search">
-        <form>
-        <input type="text" placeholder="Поиск:">
-        </form>
-      </div>
-
+      <form class="body-header-search" action="#">
+        <input type="search" class="search-field" id="search-field" placeholder="Поиск:">
+        <label for="search-field">
+          <span class="visually-hidden">Поле поиска</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+          </svg>
+        </label>
+      </form>
       <a class="body-header-bookmark " href="#">Закладки: 0</a>
       <a class="body-header-basket body-header-basket-fill" href="#">Корзина: 10</a>
 
       <a class="body-header-checkout" href="#">Оформить заказ</a>
     </div>
   </section>
-  <section class="body-header-infologin">
+  <section class="body-header-infologin container">
     <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
     <div class="body-header-description">
       Интернет-магазин строительных материалов&#160;&#160; и инструментов для ремонта
     </div>
     <ul class="body-header-contacts">
       <li class="header-phone">
-        <a href="#">+7 (812) 555-05-55</a>
+        <a href="tel:78125550555">+7 (812) 555-05-55</a>
       </li>
       <li class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
     </ul>
     <div class="head-user-navigation head-user-navigation-catalog">
-      <a class="head-login-link head-login-link-catalog" href="#">Равшан Джамшутович</a>
-      <a class="logout-link" href="index.html"></a>
+      <a class="head-login-link head-login-link-catalog" href="index.html">Равшан Джамшутович</a>
+      <a class="logout-link" href="index.html" ><span class="visually-hidden">Выйти</span></a>
       <ul>
-        <li><a href="#">Мои заказы</a></li>
-        <li><a href="#">Личный кабинет</a></li>
+        <li class="head-user-navigation-catalog-lines" ><a href="#">Мои заказы</a></li>
+        <li class="head-user-navigation-catalog-lines"><a href="#">Личный кабинет</a></li>
 
       </ul>
     </div>
   </section>
 
-  <nav class="body-header-nav">
+  <nav class="body-header-nav container">
     <ul>
       <li><a class="nav-link" href="#">Главная</a></li>
       <li><a class="nav-link" href="">Компания</a></li>
@@ -65,10 +67,10 @@
   </nav>
 </header>
 <main class="main-catalog">
-  <div class="main-catalog-items-filter">
-  <div class="main-catalog-navigation-block">
+  <div class="main-catalog-items-filter container">
+  <div class="main-catalog-navigation-block container">
     <ul class="main-catalog-navigation-links">
-      <li><a href="index.html"></a></li>
+      <li><span class="visually-hidden">На Главную</span><a href="index.html"></a></li>
       <li>
         <a href="#">Каталог</a>
       </li>
@@ -87,7 +89,7 @@
 
   <section class="items-filter">
     <h2 class="filter-header">Фильтр:</h2>
-    <form id="items-filter-form">
+    <form class="items-filter-form">
       <h3 class="filter-headers filter-price-h">Цена:</h3>
       <ul class="filter-price">
         <li class="range-box">
@@ -108,7 +110,7 @@
         </li>
         <li>
           <input class="visually-hidden" type="checkbox" value="ИНТЕРСКОЛ" name="filter-checkbox-inter"
-                 id="inter-checkbox">
+                 id="inter-checkbox" disabled>
           <label for="inter-checkbox" class="checkbox-filter interskol">ИНТЕРСКОЛ</label>
         </li>
         <li>
@@ -130,7 +132,7 @@
       <h3 class="filter-headers filter-food-h">Питание:</h3>
       <ul class="items-filter-form-charge-list">
         <li>
-          <input class="visually-hidden" type="radio" id="radio-akum" name="items-radio" value="АККУМУЛЯТОРНОЕ" checked>
+          <input class="visually-hidden" type="radio" id="radio-akum" name="items-radio" value="АККУМУЛЯТОРНОЕ" checked disabled>
           <label class="radio-filter battery" for="radio-akum">АККУМУЛЯТОРНЫЕ</label>
         </li>
         <li>
@@ -138,7 +140,7 @@
           <label class="radio-filter dial" for="radio-dial">СЕТЕВЫЕ</label>
         </li>
       </ul>
-      <button class="filter-button" type="submit">ПОКАЗАТЬ</button>
+      <button class="filter-button" type="submit">ПОКАЗАТЬ </button>
     </form>
 
   </section>
@@ -146,16 +148,16 @@
     <div class="sorting-panel">
       <h2>Сортировка:</h2>
       <ul>
-        <li>
+        <li class="sorting-panel-item">
           <a href="#" class="sort-button clicked-button">по цене</a>
         </li>
-        <li>
+        <li class="sorting-panel-item">
           <a href="#" class="sort-button">по типу</a>
         </li>
-        <li>
+        <li class="sorting-panel-item">
           <a href="#" class="sort-button"> по функционалу</a>
         </li>
-        <li>
+        <li class="sorting-panel-item">
           <button class="triangle-button clicked-triangle"><span class="visually-hidden">Сортировка по возрастанию</span></button>
           <button class="triangle-button"><span class="visually-hidden">Сортировка по убыванию</span></button>
         </li>
@@ -266,16 +268,16 @@
       </li>
     </ul>
     <ul class="item-pages">
-      <li><a href="">1</a></li>
-      <li><a href="">2</a></li>
-      <li><a href="">3</a></li>
-      <li><a href="">Следующая</a></li>
+      <li class="item-pages-line catalog-current-page"><a href="">1</a></li>
+      <li class="item-pages-line"><a href="">2</a></li>
+      <li class="item-pages-line"><a href="">3</a></li>
+      <li class="item-pages-line"><a href="">Следующая</a></li>
     </ul>
   </section>
   </div>
 
   <section class="goods-description">
-    <div class="goods-description-wrapper">
+    <div class="goods-description-wrapper container">
     <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ  </h2>
     <p>
 
@@ -286,17 +288,17 @@
   </section>
 </main>
 
-<footer>
+<footer class="main-footer">
   <section class="footer-bottom-links">
-    <div class="footer-bottom-links-wrapper">
+    <div class="footer-bottom-links-wrapper container">
       <div class="first-links-block">
         <a class="logo" href="index.html"><img width="138" height="23" src="img/logo-technomart.svg" alt="logo"></a>
         <ul class="footer-links-block-1">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="footer-links-block-1-line"><a href="#">Компания</a></li>
+          <li class="footer-links-block-1-line"><a href="#">Новости</a></li>
+          <li class="footer-links-block-1-line"><a href="#">Каталог</a></li>
+          <li class="footer-links-block-1-line"><a href="#">Доставка</a></li>
+          <li class="footer-links-block-1-line"><a href="#">Контакты</a></li>
         </ul>
       </div>
       <div class="second-links-block">
@@ -304,26 +306,26 @@
           +7 (812) 555-05-55
         </p>
         <ul class="footer-links-block-2">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
+          <li class="footer-links-block-2-line"><a href="#">Материалы</a></li>
+          <li class="footer-links-block-2-line"><a href="#">Техника</a></li>
+          <li class="footer-links-block-2-line"><a href="#">Инструмент</a></li>
+          <li class="footer-links-block-2-line"><a href="#">Спецпредложения</a></li>
         </ul>
       </div>
     </div>
   </section>
 
 
-  <section class="footer-rights-block">
+  <section class="footer-rights-block container">
     <p>
       &#9400; 2010-2019 Компания &laquo;Техномарт&raquo;
       Все права защищены
     </p>
 
     <ul class="footer-social">
-      <li><a class="social-button vk" href=""></a></li>
-      <li><a class="social-button fb" href=""></a></li>
-      <li><a class="social-button insta" href=""></a></li>
+      <li><span class="visually-hidden">Вконтакте</span> <a class="social-button vk" href=""> </a></li>
+      <li> <span class="visually-hidden">Фейсбук</span><a class="social-button fb" href=""></a></li>
+      <li> <span class="visually-hidden">Инстаграм</span><a class="social-button insta" href=""></a></li>
     </ul>
     <ul class="footer-feedback">
       <li>
